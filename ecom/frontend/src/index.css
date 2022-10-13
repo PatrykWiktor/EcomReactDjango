@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+  font-family: 'Poppins';
+}
+
+main {
+  min-height: 80vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: .5rem 0;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+p {
+  text-align: center;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 35%;
+}
+
+.carousel-caption h4, h1, p {
+  color: rgb(12, 12, 12);
+}
+
+.carousel-caption h1 {
+  margin-left: 20%;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  margin-left: 20%;
+}
+
+.carousel-caption Button {
+  margin-left: 20%;
+}
+
+.carousel img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel a {
+  margin: 0 auto;
+}
+
+.second-slide.carousel-caption {
+  top: 60%;
+}
+
+.second-slide h1 {
+  color: white;
+  margin-left: 0px;
+}
+
+.second-slide p {
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 0;
+}
+
+.third-slide h1 {
+  color: white;
+  margin-left: 0;
+}
+
+.third-slide.carousel-caption {
+  top: 0%;
+}
+
+.third-slide Button {
+  margin-top: 35%;
+  margin-left: 0;
+}
+
+.Searchbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.no-grow {
+  flex-grow: 0 !important;
+}
+
+.carousel {
+  margin: 1rem;
+  border-radius: 5%;
+  height: fit-content;
+}
+
+.product-name {
+  min-height: 3rem;
+  max-height: 3rem;
+}
+
+.card {
+  text-align: center;
+}
+
+.card-trans {
+  transition: all 500ms ease;
+  border-color: transparent !important;
+}
+
+.card-trans:hover, .card-trans:focus-within {
+  transform: scale(1.05);
+  border-color: rgba(0, 0, 0, .125) !important;
+}
+
+.trans-exclude {
+  transition: unset !important;
+  transform: unset !important;
+  border: 1px solid rgba(0, 0, 0, .125) !important;
+}
+
+.hs-latest-prod {
+  text-align: center;
+  border-radius: 5%;
+  margin: 2rem 2rem 1rem 2rem;
+  padding: 1rem;
+  border-top: solid #e8ecef 2px;
+}
+
+.hs-latest-prod h1 {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.hs-featured-prod {
+  text-align: center;
+  border-radius: 5%;
+  margin: 0em 2rem 1rem 2rem;
+  border-top: solid #e8ecef 2px;
+}
+
+.review {
+  text-align: left !important;
+}
+
+/* CATEGORIES DROP DOWN MENU START*/
+
+.Categories {
+  display: flex;
+  background-color: #f0f2f4;
+  position: relative;
+  padding: .2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cat {
+  position: relative;
+  margin: 0 2rem;
+}
+
+.Cat-Dropdown {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  background-color: #f0f2f4;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: .0rem 0;
+  width: max-content;
+}
+
+.Cat-Dropdown-Field {
+  background-color: #f0f2f4;
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  min-width: -webkit-fill-available;
+  width: max-content;
+  border-bottom: solid var(--secondary) 1px;
+}
+
+.Cat-Dropdown-Item {
+  margin: 0;
+  padding: .5rem 1rem;
+  margin: .5rem;
+  cursor: pointer;
+  border-radius: 15%;
+  transition: background-color .6s;
+}
+
+.Cat-Dropdown-Item:hover {
+  border-top: solid var(--secondary) 1px;
+  background-color: aliceblue;
+}
+
+.Cat-Dropdown-Item-Title {
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 1rem;
+  cursor: pointer;
+}
+
+/* CATEGORIES DROP DOWN MENU END*/
+
+.isHidden {
+  display: none;
+}
+
+/* FILTER DROPDOWN MENU START */
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: auto;
+}
+
+.filter-container p {
+  margin-right: 1em;
+}
+
+.filter-select {
+  margin: 0.6rem 0;
+}
+
+.filter-side {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.checkoutstep-active {
+  background: red;
+  padding: .1rem 1rem;
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+.cls-1{fill:#ea5b0c;}
+.cls-2{fill:#1d1d1b;}
+
+.logo-svg{
+  height: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    display: none;
+  }
+  .product-filter-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .product-filter-side-catbrand {
+    display: flex;
+    align-items: baseline;
+  }
+  .product-filter-side-cat {
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 768) {
+  .filter-side {
+    display: block;
+  }
+}
+
+@media (max-width: 993px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+  .carousel img {
+    height: 350px;
+  }
+}
