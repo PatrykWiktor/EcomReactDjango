@@ -120,11 +120,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bloki',
-        'USER': 'nezord',
-        'PASSWORD': '580018612b',
-        'HOST': 'bloki-identifier.chaey7k1vofd.eu-central-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': ',
+        'PORT': '',
     }
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
